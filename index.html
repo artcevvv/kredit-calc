@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>calculator</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+      <div class="container-general">
+        <h3 class="calc-title">Рассчитайте свой кредит онлайн</h3>
+      <div class="inner-container-grid">
+          <div class="container-right">
+            <div class="summ">
+            <label for="money-amount-output" class="money-amount">Деньги</label>
+            <input
+              type="number"
+              name="money-amount-output"
+              id="moneyAmountOutput"
+              value=""
+            />
+            <input
+              type="range"
+              name="money-amount-selector"
+              id="moneyAmountSelector"
+              min="0"
+              max="100"
+              onchange="updMoneyInput"
+              />
+            </div>
+          <div class="srok">
+            <label for="money-amount-output" class="money-amount">Срок кредита</label>
+            <input
+              type="number"
+              name="money-amount-output"
+              id="moneyAmountOutput"
+              value=""
+            />    
+            <input
+              type="range"
+              name="money-amount-selector"
+              id="moneyAmountSelector"
+            />
+          </div>
+          <div class="date">
+            <label for="date-output" class="money-amount">Дата выдачи кредита</label>
+            <input
+              type="date"
+              name="date-output"
+              id="moneyAmountOutput"
+            />
+          </div>
+        </div>
+        <div class="container-left">
+            <div class="inner-container-left-text">
+                <div class="numbers">
+                    <span class="subtitle">Ежемесячный платеж</span>
+                    <span class="amount" id="amount-of-money-a">320000</span>
+                </div>
+                <div class="numbers">
+                    <span class="subtitle">Переплата по процентам за кредит</span>
+                    <span class="amount" id="amount-of-money-b">320000</span>
+                </div>
+            </div>
+
+            <div class="inner-container-left-btns">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
