@@ -1,3 +1,3 @@
-function updMoneyInput(val){
-    document.getElementById('moneyAmountOutput').value = val;
-}
+$(document).ready(function() {
+    $('#moneyAmountOutput').val($('#moneyAmountSelector').val())
+})
